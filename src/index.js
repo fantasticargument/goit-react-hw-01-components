@@ -1,45 +1,15 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
-import user from './userProfil.json';
+import './index.css';
+import App from './App';
 
-// {
-//   /* <Profile
-//   name={user.name}
-//   tag={user.tag}
-//   location={user.location}
-//   avatar={user.avatar}
-//   stats={user.stats}
-// />; */
-// }
-
-// consol.log(user);
-
-const element = (
-  <div class="profile">
-    <div class="description">
-      <img src={user.avatar} alt={user.name} class="avatar" />
-      <p class="name">{user.name}</p>
-      <p class="tag">{user.tag}</p>
-      <p class="location">{user.location}</p>
-    </div>
-
-    <ul class="stats">
-      <li>
-        <span class="label">Followers</span>
-        <span class="quantity">{user.stats.Followers}</span>
-      </li>
-      <li>
-        <span class="label">Views</span>
-        <span class="quantity">{user.stats.Views}</span>
-      </li>
-      <li>
-        <span class="label">Likes</span>
-        <span class="quantity">{user.stats.Views}</span>
-      </li>
-    </ul>
-  </div>
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
 );
 
-ReactDOM.render(element, document.getElementById('root'));
 //=============================================================================================================
 // import React from 'react';
 // import ReactDOM from 'react-dom';
